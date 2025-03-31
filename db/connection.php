@@ -2,7 +2,7 @@
 
 $hostname = 'localhost:3306';
 $username = 'root';
-$password = 'pass1234';
+$password = '';
 $dbname = 'ecommerceproject';
 
 $conn = mysqli_connect($hostname, $username, $password, $dbname);

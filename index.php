@@ -13,9 +13,9 @@ $result = mysqli_query($conn, $sql);
 <div class="container my-4">
 
     <h1>
-       Index page
+        Index page
     </h1>
-    
+
     <br>
     <br>
 
@@ -39,16 +39,16 @@ $result = mysqli_query($conn, $sql);
             if (mysqli_num_rows($result) > 0) {
                 $i = 1;
                 while ($row = mysqli_fetch_assoc($result)) {
-            ?>
+                    ?>
                     <tr>
                         <th scope="row"><?= $i; ?></th>
-                        <th scope="row"><?php echo $row['pid'] ?></th>
+                        <th scope="row"><?php echo $row['id'] ?></th>
                         <td><?php echo $row['name']; ?></td>
                         <td><?php echo $row['quantity']; ?></td>
                         <td><?php echo $row['price']; ?></td>
                         <td><?php echo $row['category_name']; ?></td>
                     </tr>
-            <?php
+                    <?php
                     $i++;
                 }
             } else {

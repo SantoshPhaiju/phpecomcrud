@@ -37,18 +37,18 @@ $result = mysqli_query($conn, $sql);
                     ?>
                     <tr>
                         <th scope="row"><?= $i; ?></th>
-                        <th scope="row"><?php echo $row['pid'] ?></th>
+                        <th scope="row"><?php echo $row['id'] ?></th>
                         <td><?php echo $row['name']; ?></td>
                         <td><?php echo $row['quantity']; ?></td>
                         <td><?php echo $row['price']; ?></td>
                         <td><?php echo $row['category_name']; ?></td>
                         <td scope="row">
                             <!-- Button trigger modal -->
-                            <a href="edit-product.php?id=<?php echo $row['pid'] ?>" class="btn btn-primary">
+                            <a href="edit-product.php?id=<?php echo $row['id'] ?>" class="btn btn-primary">
                                 Edit
                             </a>
 
-                            <a href="delete-product.php?id=<?php echo $row['pid'] ?>" type="button" class="btn btn-danger">
+                            <a href="delete-product.php?id=<?php echo $row['id'] ?>" type="button" class="btn btn-danger">
                                 Delete
                             </a>
 
